@@ -119,7 +119,7 @@ p {
   letter-spacing: 0.05rem;
 }
 
-/* NOTE the desktop part needs work and i am done */
+/* todo the desktop part needs work and i am done */
 /* for desktop size 700px */
 @media only screen and (min-width: 700px) {
   main {
