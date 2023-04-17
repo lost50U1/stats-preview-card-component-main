@@ -1,10 +1,11 @@
-# Frontend Mentor - QR code component solution
+# Frontend Mentor - Stats preview card component solution
 
-This is a solution to the [QR code component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This is a solution to the [Stats preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
 - [Overview](#overview)
+  - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
@@ -16,14 +17,20 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ## Overview
 
+### The challenge
+
+Users should be able to:
+
+- View the optimal layout depending on their device's screen size
+
 ### Screenshot
 
 ![](screenshot.png)
 
 ### Links
 
-- Solution URL: [Website](https://www.frontendmentor.io/solutions/responsive-qr-code-component-with-html-and-css-FkbW3chcZy)
-- Live Site URL: [Website](https://lost50u1.github.io/qrcodecomponent/)
+- Solution URL: [Website](https://www.frontendmentor.io/solutions/stats-preview-card-component-with-grid-and-flexbox-uVZ-_weS-r)
+- Live Site URL: [Website](https://lost50u1.netlify.app)
 
 ## My process
 
@@ -32,25 +39,21 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 - Semantic HTML5 markup
 - CSS custom properties
 - Mobile-first workflow
+- CSS grid
+- CSS flexbox
 
 ### What I learned
 
 I learned more about websites layout.
 
-I used this media query to make it responsive for desktop screen:
+I used a combination of flexbox and cssgrid and more layout of items and i learned more about centering items vertically
 
-```css
-/* for desktop size 1440px */
-@media only screen and (min-width: 1440px) {
-  main {
-    margin-top: 20vh;
-  }
-}
-```
+I learned about how to make a gradient overlay on an image
 
 ### Useful resources
 
 - [Card component on freecode camp](https://www.freecodecamp.org/news/learn-css-basics-by-building-a-card-component/) - This helped me cause it got similar layout to some level.
+- [Add A Blurry Gradient To Your HTML Code](https://www.magicpattern.design/blog/add-blurry-gradient-to-your-html-code) - this helped me with the hover icon on the image
 
 ## Author
 
