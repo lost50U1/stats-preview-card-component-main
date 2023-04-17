@@ -37,14 +37,12 @@ body {
   font-size: 15px;
   font-family: "Inter", sans-serif; /*400 and 700 */
   /* font-family: "Lexend Deca", sans-serif; 400 */
-  width: 100%;
   background-color: hsl(233, 47%, 7%);
   color: hsl(0, 0%, 100%);
   padding: 1.6em;
   /* this will center it both vertical and horizontally */
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  place-content: center;
 }
 
 main {
@@ -55,7 +53,6 @@ main {
   flex-direction: column-reverse;
   justify-content: center;
   align-items: center;
-  width: 100%;
 }
 
 /* find the source where i learned this and add it to useful resources my guess for now https://www.magicpattern.design/blog/add-blurry-gradient-to-your-html-code */
@@ -122,17 +119,16 @@ p {
   letter-spacing: 0.05rem;
 }
 
-/* todo the desktop part needs work and i am done */
-/* for desktop size 700px */
+/* todo the responsive part needs work and i am done */
 @media only screen and (min-width: 700px) {
   main {
     flex-direction: row;
     width: 80%;
-    padding: 0;
+    margin: 0 auto;
   }
   .content {
     padding: 4rem;
-    padding-right: 8em;
+    padding-right: 7em;
   }
 
   .content,
@@ -151,5 +147,9 @@ p {
   .flex {
     display: flex;
     gap: 2.5em;
+  }
+
+  .valign {
+    text-align: left;
   }
 }
