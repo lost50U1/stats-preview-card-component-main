@@ -55,8 +55,6 @@ main {
   align-items: center;
 }
 
-/* find the source where i learned this and add it to useful resources my guess for now https://www.magicpattern.design/blog/add-blurry-gradient-to-your-html-code */
-
 picture {
   background: hsl(277, 64%, 61%);
 }
