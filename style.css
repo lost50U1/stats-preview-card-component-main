@@ -40,7 +40,7 @@ body {
   /* font-family: "Lexend Deca", sans-serif; 400 */
   background-color: hsl(233, 47%, 7%);
   color: hsl(0, 0%, 100%);
-  padding: 1.6em;
+  margin: 0 1rem;
   /* this will center it both vertical and horizontally */
   display: grid;
   place-content: center;
@@ -50,21 +50,29 @@ main {
   background-color: hsl(244, 38%, 16%);
   border-radius: 0.5rem;
   overflow: hidden;
-  display: flex;
-  flex-direction: column-reverse;
-  justify-content: center;
-  align-items: center;
+  width: 100%;
 }
 
-picture {
-  background: hsl(277, 64%, 61%);
+.image {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: hsl(277, 64%, 61%);
+  opacity: 0.5;
 }
 
 img {
-  opacity: 0.7;
-  -webkit-filter: blur(1px);
-  filter: blur(1px);
   width: 100%;
+  /* the fix for image is this  */
+  height: 100%;
 }
 
 .content {
@@ -119,11 +127,10 @@ p {
 }
 
 /* todo the responsive part needs work and i am done */
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 600px) {
   main {
-    flex-direction: row;
-    width: 80%;
-    margin: 0 auto;
+    display: flex;
+    max-width: 1110px;
   }
   .content {
     padding: 4rem;
@@ -133,6 +140,11 @@ p {
   .content,
   picture {
     width: 50%;
+  }
+
+  img {
+    -o-object-fit: cover;
+    object-fit: cover;
   }
 
   p {
@@ -146,6 +158,7 @@ p {
   .flex {
     display: flex;
     gap: 2.5em;
+    flex-wrap: wrap;
   }
 
   .valign {
