@@ -118,7 +118,7 @@ p {
 }
 
 /* todo the responsive part needs work and i am done */
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 600px) {
   main {
     flex-direction: row;
     width: 80%;
@@ -127,11 +127,16 @@ p {
   .content {
     padding: 4rem;
     padding-right: 7em;
+    width: 90%;
   }
 
-  .content,
   picture {
-    width: 50%;
+    overflow: hidden;
+  }
+
+  img {
+    -o-object-fit: contain;
+       object-fit: contain;
   }
 
   p {
