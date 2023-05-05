@@ -131,7 +131,7 @@ p {
   main {
     display: flex;
     max-width: 1110px;
-      flex-direction: row-reverse;
+    flex-direction: row-reverse;
   }
   .content {
     padding: 4rem;
